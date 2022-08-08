@@ -30,12 +30,12 @@ class BaseModel:
         models.storage.save()
     
     def to_dict(self):
-        """Return the dictionary of the BaseModel instance.
-        Includes the key/value pair __class__ representing
-        the class name of the object.
-        """
+
+        """Return the dictionary of the BaseModel instance"""
+
         dict = self.__dict__.copy()
         dict["created_at"] = self.created_at.isoformat()
         dict["updated_at"] = self.updated_at.isoformat()
         dict["__class__"] = self.__class__.__name__
         return dict
+        
