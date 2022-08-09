@@ -28,7 +28,13 @@ def parse(arg):
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb)"
     __classes = {
-        "User"
+        "BaseModel",
+        "User",
+        "State",
+        "City",
+        "Place",
+        "Amenity",
+        "Review"
     }
 
     def do_quit(self, arg):
