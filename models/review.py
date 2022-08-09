@@ -3,7 +3,7 @@
 from models.base_model import BaseModel
 
 
-class REview(BaseModel):
+class Review(BaseModel):
     """Represent a Review
 
     Attributes:
