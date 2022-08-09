@@ -124,3 +124,6 @@ class TestBaseModel_save(unittest.TestCase):
         basemodelid = "BaseModel." + basemodel.id
         with open("file.json", "r") as f:
             self.assertIn(basemodelid, f.read())
+
+if __name__ == "__main__":
+    unittest.main()
